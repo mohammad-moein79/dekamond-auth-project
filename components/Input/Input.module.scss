@@ -1,0 +1,23 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  label {
+    font-size: 0.875rem;
+    color: #444;
+  }
+
+  .input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+    font-size: 18px;
+
+    &:focus {
+      border-color: #333;
+      outline: none;
+    }
+  }
+}
