@@ -16,7 +16,6 @@ export async function AuthAction(_: any, formData: FormData) {
 
   const res = await fetch("https://randomuser.me/api/?results=1&nat=us");
   const data = await res.json();
-  console.log(data);
   const user = data.results[0];
 
   (await cookies()).set("user", JSON.stringify(user), {
